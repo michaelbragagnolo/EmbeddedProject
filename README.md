@@ -24,4 +24,5 @@ Open-source end-to-end library for continual learning based on Pytorch, devised 
 **[Avalanche Website](https://avalanche.continualai.org)** | **[Avalanche Repository](https://github.com/ContinualAI/avalanche)**
 <img src="avalanche_library.png" alt="drawing" style="width:700px;"/>
 </div>
+
 ***
