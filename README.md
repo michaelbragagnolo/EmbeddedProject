@@ -1,6 +1,6 @@
 <div align="center">
     
-# Generative Replay for Continual Learning
+## AI-powered edge devices: Generative Replay for Continual Learning
 </div>
 Repository that is intended to keep track of the work for the project of the course Embedded Systems and that contains all the reference material and the scripts developed to this end.
 
