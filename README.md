@@ -41,5 +41,25 @@ Open-source end-to-end library for continual learning based on Pytorch, devised 
 <img src="avalanche_library.png" alt="drawing" style="width:400px;"/>
 </div>
 
-All the code is based on the Avalanche framework and is publicy available.
+All the code is based on the `Avalanche` framework and is publicy available.
 ***
+
+## Action plan
+
+### 1. EXPERIMENT
+Provide a set of experiments reproducing **Generative Replay strategy** in Continual Learning.
+Scripts are (so far) organized as follows:
+ - *Neural Network Architecture*
+   - MultiLayer Perceptron (MLP): *MLP_NNmodel.py* defines the neural network utilized for training and evaluating the CL technique; 
+ - *Generative Model* 
+   - Variational AutoEncoder (VAE): *GenerativeModel.py* defines the VAE generative model of data;
+ - *Generator Strategy*
+   - *GeneratorStrategy.py* wraps the VAE generator in a trainable strategy, later passed to the generator_strategy parameter;
+ - *Learning Strategy*
+   - Generative Replay: *GenerativeReplayStrategy.py* implements the Continual Learning strategy of Latent Generative Replay.
+   
+### 2. EVALUATE
+Bechmark and evaluate the performance together with the computational and memory requirements of the CL strategy.
+
+### 3. DISCUSSION
+Discuss the results and conclude.
