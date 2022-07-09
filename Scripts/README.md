@@ -31,8 +31,9 @@ Experiment reproducing Generative Replay strategy: Deep Generative Replay for a 
 
 <div align="center">
 
-<img src="scolar.png" alt="drawing" style="width:400px;"/>
+<img src="scholar.png" alt="drawing" style="width:600px;"/>
 </div> 
 
 The scholar model is built with a solver that has suitable architecture for solving a task sequence and a generator trained using a variational autoencoder. However, this framework can employ any deep generative model as a generator.
 
+Reference script: *GenerativeReplay.py*. **(to be completed..)**
