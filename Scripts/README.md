@@ -24,7 +24,7 @@ Reference script: *Generator.py*. Script serves as a test to visualize the sampl
 ### 3. Training strategies
 Instances of the **training strategies** for the VAE generative model and Generative Replay, based on the SupervisedTemplate of Avalanche, which is a basic training loop and callback system that allows to execute code at each experience of the training loop.
 
-Reference script: *TrainingStrategies.py*.
+Reference script: *TrainingStrategies.py*. **(to be completed..)**
 
 ### 4. Generative Replay
 Experiment reproducing Generative Replay strategy: Deep Generative Replay for a Scholar consisting of a Solver and Generator.
