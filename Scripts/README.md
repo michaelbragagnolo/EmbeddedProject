@@ -28,6 +28,7 @@ Reference script: *TrainingStrategies.py*. **(to be completed..)**
 
 ### 4. Generative Replay
 Experiment reproducing Generative Replay strategy: Deep Generative Replay for a Scholar consisting of a Solver and Generator.
+The strategy relies on the *GenerativeReplayPlugin* of Avalanche. 
 
 <div align="center">
 
