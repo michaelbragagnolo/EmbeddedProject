@@ -28,6 +28,7 @@ References                                             | link
 -------------------------------------------------------|---------------------------------
 Continual Learning on a RISC-V Node                    | https://arxiv.org/abs/2007.13631
 On-Device Training under 256KB memory                  | https://arxiv.org/abs/2206.15472
+An investigation of Generative Replay in DRL           | http://essay.utwente.nl/85772/
 
 ***
 
