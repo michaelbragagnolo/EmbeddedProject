@@ -7,7 +7,7 @@ Repository that is intended to keep track of the work for the project of the cou
 ### PROJECT in two lines
 The presented work aims at providing interesting improvements to replay and memory-based approaches that store past data to alleviate catastrophic forgetting in the field of **Continual Learning**, by performing extensive experimental evaluation on the novel framework of **Generative Replay**. 
 
-I propose an alternative approach to sequentially train NNs without referring to past data. In this generative replay framework in fact, the model retains previously acquired knowledge by training a deep generative model (VAE) to mimic past data to be paired with corresponding response from the past task solver to represent old tasks.
+I propose an alternative approach to sequentially train NNs without referring to past data. In this generative replay framework in fact, the model retains previously acquired knowledge by training a deep generative model to mimic past data to be paired with corresponding response from the past task solver to represent old tasks.
 
 The model can be applied to **any** task as long as the trained generator reliably reproduces the input space.
 
