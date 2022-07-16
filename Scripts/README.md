@@ -29,7 +29,7 @@ The **Generator** for the scholar model is wrapped into a trainable strategy, to
 Taking inspiration from ref. [1](https://arxiv.org/abs/1809.10635) and [2](https://www.nature.com/articles/s41467-020-17866-2), the standard Generative Replay approach is proposed with the **Replay-through-feedback** modification: the generator is merged into the main model by equipping it with generative feedback connections; the first layers of the resulting model can be interpreted as the early layers of the visual cortex and the top layers as corresponding to the hippocampus:
 <div align="center">
 
-<img src="RtF.png" alt="drawing" style="width:350px;"/>
+<img src="RtF.png" alt="drawing" style="width:500px;"/>
 </div>
 
 The replay through feedback model is implemented as a symmetric VAE, as described before, with an additional softmax classification layer from the final hidden layer of its encoder. This way, the computational cost is much reduced.
