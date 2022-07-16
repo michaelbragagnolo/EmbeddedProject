@@ -6,7 +6,7 @@
 The generative replay strategy implemented relies on the framework proposed by [Shin et al.](https://arxiv.org/abs/1705.08690?context=cs), which consists of a main model for solving the tasks and a separate generative model trained to generate the data to be replayed:
 <div align="center">
 
-<img src="framework.png" alt="drawing" style="width:350px;"/>
+<img src="framework.png" alt="drawing" style="width:500px;"/>
 </div>
 
 ### 1. Generative Model
