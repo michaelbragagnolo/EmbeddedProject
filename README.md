@@ -61,8 +61,7 @@ Bechmark and evaluate the performance together with the computational and memory
 - **Task protocol**
   - Split-MNIST, split up the MNIST dataset in five tasks, such that each task contains two digits.
 - **Network architecture**
-  - Fully connected network with two hidden layers of 400 nodes each with ReLU non-linearities and a softmax output layer.  
-  The softmax output layer is single-headed, meaning that only all output units of the classes encountered so far are active.
+  - Fully connected network with two hidden layers of 400 nodes each with ReLU non-linearities and a softmax output layer. The softmax output layer is single-headed, meaning that only all output units of the classes encountered so far are active.
 - **Training**
   - Two models sequentially trained on all tasks: the main model, for actually solving the task and a generative model, for generating replays of previously learned tasks. The data to be replayed is produced by first sampling inputs from the generative model, after which those generated inputs are presented to the main model and labelled as the most likely class as predicted by that model.
 - **Evaluation on a MCU-class architecture perspective**
