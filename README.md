@@ -16,7 +16,6 @@ References                                             | link
 Continual Learning with Deep Generative Replay              | https://arxiv.org/abs/1705.08690
 Brain-inspired replay for Continual Learning                | https://www.nature.com/articles/s41467-020-17866-2
 An investigation of Replay-based approaches for Continual Learning | https://arxiv.org/abs/2108.06758
-Generative Negative Replay for Continual Learning           | https://openreview.net/forum?id=MWQCPYSJRN
 
 **In the context of AI-powered edge devices**, this work also reports the trade-off between memory footprint, latency, and accuracy for learning a new class with Generative Replay when targeting an image classification task on the MNIST dataset; Memory and computational requirements of the Continual Learning algorithm are first quantified and later evaluated in a simulated environment but from a platform-perspective:
 - Memory evaluation
@@ -27,7 +26,6 @@ Generative Negative Replay for Continual Learning           | https://openreview
 References                                             | link         
 -------------------------------------------------------|---------------------------------
 Continual Learning on a RISC-V Node                    | https://arxiv.org/abs/2007.13631
-On-Device Training under 256KB memory                  | https://arxiv.org/abs/2206.15472
 An investigation of Generative Replay in DRL           | http://essay.utwente.nl/85772/
 
 ***
@@ -37,9 +35,9 @@ Open-source end-to-end library for continual learning based on Pytorch, devised 
 
 <div align="center">
   
-**[Avalanche Website](https://avalanche.continualai.org)** | **[Avalanche Repository](https://github.com/ContinualAI/avalanche)**
+**[Avalanche Website](https://avalanche.continualai.org)**
 
-<img src="avalanche_library.png" alt="drawing" style="width:400px;"/>
+<img src="avalanche_library.png" alt="drawing" style="width:350px;"/>
 </div>
 
 All the code is based on the `Avalanche` framework and is publicy available.
@@ -48,15 +46,13 @@ All the code is based on the `Avalanche` framework and is publicy available.
 ## Action plan
 
 ### 1. EXPERIMENT
-Provide a set of experiments reproducing **Generative Replay strategy** in Continual Learning.
+Provide a set of experiments reproducing **Generative Replay strategy** in Continual Learning.  
 Scripts are (so far) organized as follows:
- - *Neural Network Architecture*: MultiLayer Perceptron (MLP)
-   - *MLP_NNmodel.py* defines the neural network utilized for training and evaluating the CL technique; 
  - *Generative Model*: Variational AutoEncoder (VAE) 
    - *GenerativeModel.py* defines the VAE generative model of data;
  - *Generator Strategy*
    - *GeneratorStrategy.py* wraps the VAE generator in a trainable strategy, later passed to the generator_strategy parameter;
- - *Learning Strategy*: Generative Replay 
+ - *Training Strategy*: Generative Replay 
    - *GenerativeReplayStrategy.py* implements the Continual Learning strategy of Latent Generative Replay.
    
 ### 2. EVALUATE
