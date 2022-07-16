@@ -47,7 +47,7 @@ The strategy relies on the *GenerativeReplayPlugin* of Avalanche.
 
 <div align="center">
 
-<img src="scholar.png" alt="drawing" style="width:600px;"/>
+<img src="training.png" alt="drawing" style="width:500px;"/>
 </div> 
 
 The scholar model is built with a solver that has suitable architecture for solving a task sequence and a generator trained using a variational autoencoder. However, this framework can employ any deep generative model as a generator.
