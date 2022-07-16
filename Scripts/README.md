@@ -42,17 +42,17 @@ Instances of the **training strategies** for the VAE generative model and Genera
 Reference script: *TrainingStrategies.py*.
 
 ### 4. Generative Replay
-Experiment reproducing Generative Replay strategy: Deep Generative Replay for a Scholar consisting of a Solver and Generator. 
+Experiment reproducing Generative Replay strategy: Deep Generative Replay for a Scholar consisting of a Solver and Generator.  
 The strategy relies on the *GenerativeReplayPlugin* of Avalanche. 
+
+The scholar model is built with a solver that has suitable architecture for solving a task sequence and a generator trained using a variational autoencoder. However, this framework can employ any deep generative model as a generator.  
+The strategy sequentially trains the neural network on all tasks of the task protocol, whereby the network has access only to the data of the current task: the current minibatch of the strategy is updated before training an experience by *sampling the generator* and *concatenating* the replay data to the current batch.
 
 <div align="center">
 
 <img src="training.png" alt="drawing" style="width:500px;"/>
 </div> 
 
-The scholar model is built with a solver that has suitable architecture for solving a task sequence and a generator trained using a variational autoencoder. However, this framework can employ any deep generative model as a generator.
-
-The strategy sequentially trains the neural network on all tasks of the task protocol, whereby the network has access only to the data of the current task: the current minibatch of the strategy is updated before training an experience by *sampling the generator* and *concatenating* the replay data to the current batch.  
 The parameters to be used for the training strategy are:
  - replay_size: batch size of replay added to each data batch;
  - increasing_replay_size: if set to True, each experience this will double the amount of replay data added to each data batch.
