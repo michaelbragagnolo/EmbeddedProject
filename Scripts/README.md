@@ -15,10 +15,15 @@ Hereby it is considered a variational autoencoder deep generative model based on
 **The Variational AutoEncoder (VAE)** is an architecture composed of an encoder, a decoder and a loss function, that is trained to minimize the reconstruction error between the encoded-decoded data and the initial data:
 <div align="center">
 
-<img src="autoencoder.png" alt="drawing" style="width:350px;"/>
+<img src="VAE_schematic.png" alt="drawing" style="width:350px;"/>
 </div> 
 
 The VAE is symmetric, the architectures are similar to the base neural network: both the encoder and the decoder are fully connected NNs with two hidden layers containing 400 units with ReLU non-linearity. To train the generator, the same hyperparameters (optimizer, batch sizes, learning rate) are used as for training the main model.
+
+How does the VAE work?
+- **Autoencoder** maps the input samples to latent distribution parameters z<sub>mean</sub> and z<sub>log-sigma</sub> ; 
+- **Encoder** randomly samples similar points z from the latent space;
+- **Decoder** takes these latent space points and outputs the corresponding reconstructed samples.
 
 Reference script: *GenerativeModel.py*. Any kind of generative model can be used, the script utilizes a VAE generator.  
 Performance depend on the quality of the generator and its ability to recover the input distribution.
