@@ -51,7 +51,7 @@ Scripts are (so far) organized as follows:
  - *Generative Model*: Variational AutoEncoder (VAE) 
    - *GenerativeModel.py* defines the VAE generative model of data;
  - *Generator Strategy*
-   - *GeneratorStrategy.py* wraps the VAE generator in a trainable strategy, later passed to the generator_strategy parameter;
+   - *Generator.py* wraps the VAE generator in a trainable strategy, later passed to the generator_strategy parameter;
  - *Training Strategy*: Generative Replay 
    - *GenerativeReplayStrategy.py* implements the Continual Learning strategy of Latent Generative Replay.
    
