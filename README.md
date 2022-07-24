@@ -47,13 +47,13 @@ All the code is based on the `Avalanche` framework and is publicy available.
 
 ### 1. EXPERIMENT
 Provide a set of experiments reproducing **Generative Replay strategy** in Continual Learning.  
-Scripts are (so far) organized as follows:
+Jupyter Notebook scripts are (so far) organized as follows:
  - *Generative Model*: Variational AutoEncoder (VAE) 
-   - *GenerativeModel.py* defines the VAE generative model of data;
+   - *GenerativeModel.ipynb* defines the VAE generative model of data;
  - *Generator Strategy*
-   - *Generator.py* wraps the VAE generator in a trainable strategy, later passed to the generator_strategy parameter;
+   - *Generator.ipynb* wraps the VAE generator in a trainable strategy, serves as simulative training of the generator for the Scholar model;
  - *Training Strategy*: Generative Replay 
-   - *GenerativeReplayStrategy.py* implements the Continual Learning strategy of Latent Generative Replay.
+   - *GenerativeReplay.ipynb* implements the Continual Learning strategy of Deep Generative Replay.
    
 ### 2. EVALUATE
 
