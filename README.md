@@ -11,11 +11,12 @@ I propose an alternative approach to sequentially train NNs without referring to
 
 The model can be applied to **any** task as long as the trained generator reliably reproduces the input space.
 
-References                                             | link         
--------------------------------------------------------|---------------------------------
-Continual Learning with Deep Generative Replay              | https://arxiv.org/abs/1705.08690
-Brain-inspired replay for Continual Learning                | https://www.nature.com/articles/s41467-020-17866-2
-An investigation of Replay-based approaches for Continual Learning | https://arxiv.org/abs/2108.06758
+References                                              | link         
+--------------------------------------------------------|---------------------------------
+Continual Learning with Deep Generative Replay          | https://arxiv.org/abs/1705.08690
+Brain-inspired replay for Continual Learning            | https://www.nature.com/articles/s41467-020-17866-2
+An introduction to Variational Autoencoders             | https://arxiv.org/abs/1906.02691
+
 
 **In the context of AI-powered edge devices**, this work also reports the trade-off between memory footprint, latency, and accuracy for learning a new class with Generative Replay when targeting an image classification task on the MNIST dataset; Memory and computational requirements of the Continual Learning algorithm are first quantified and later evaluated in a simulated environment but from a platform-perspective:
 - Memory evaluation
