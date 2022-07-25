@@ -26,7 +26,7 @@ An introduction to Variational Autoencoders             | https://arxiv.org/abs/
 References                                             | link         
 -------------------------------------------------------|---------------------------------
 Continual Learning on a RISC-V Node                    | https://arxiv.org/abs/2007.13631
-An investigation of Generative Replay in DRL           | http://essay.utwente.nl/85772/
+Machine Learning for Microcontroller-Class Hardware    | https://arxiv.org/abs/2205.14550
 
 ***
 
