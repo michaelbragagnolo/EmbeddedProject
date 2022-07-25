@@ -22,7 +22,6 @@ An introduction to Variational Autoencoders             | https://arxiv.org/abs/
 - Memory evaluation
 - Latency
 - Accuracy
-- Energy estimation
 
 References                                             | link         
 -------------------------------------------------------|---------------------------------
