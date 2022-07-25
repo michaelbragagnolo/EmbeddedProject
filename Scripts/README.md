@@ -21,6 +21,11 @@ Hereby it is considered a variational autoencoder deep generative model based on
 The VAE is symmetric, the architectures are similar to the base neural network: both the encoder and the decoder are fully connected NNs with two hidden layers containing units with ReLU non-linearity. To train the generator, the same hyperparameters (optimizer, batch sizes, learning rate) are used as for training the main model.
 
 How does the VAE work?
+<div align="center">
+
+<img src="VAE_Architecture.png" alt="drawing" style="width:450px;"/>
+</div> 
+
 - **Autoencoder** maps the input samples to latent distribution parameters z<sub>mean</sub> and z<sub>log-sigma</sub> ; 
 - **Encoder** randomly samples similar points z from the latent space;
 - **Decoder** takes these latent space points and outputs the corresponding reconstructed samples.
