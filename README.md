@@ -66,8 +66,6 @@ Bechmark and evaluate the performance together with the computational and memory
 - **Training**
   - Two models sequentially trained on all tasks: the main model, for actually solving the task and a generative model, for generating replays of previously learned tasks. The data to be replayed is produced by first sampling inputs from the generative model, after which those generated inputs are presented to the main model and labelled as the most likely class as predicted by that model.
 - **Evaluation on a MCU-class architecture perspective**
-  - Accuracy;
-  - Confusion matrices to assess the quality of the patterns seen during training;
-  - ... to be completed ...
+  - Qualitatively report the trade-off between memory footprint, latency and accuracy for learning a new class with Generative Replay via Variational Autoencoder, when targeting an image classification task on MNIST dataset.
 ### 3. DISCUSSION
 Discuss the results and conclude.
