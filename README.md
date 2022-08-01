@@ -52,7 +52,7 @@ Jupyter Notebook scripts are (so far) organized as follows:
    - *GenerativeModel.ipynb* defines the VAE generative model of data;
  - *Generator Strategy*
    - *Generator.ipynb* wraps the VAE generator in a trainable strategy, serves as simulative training of the generator for the Scholar model;
- - *Training Strategy*: Generative Replay 
+ - *Training Strategy*: Generative Replay
    - *GenerativeReplay.ipynb* implements the Continual Learning strategy of Deep Generative Replay.
    
 ### 2. EVALUATE
